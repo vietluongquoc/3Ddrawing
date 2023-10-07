@@ -2,7 +2,7 @@ import * as THREE from './threejs/three.module.js';
 import {STLLoader} from './threejs/STLLoader.js';
 import Arm3D from "./arm3D.js";
 
-const clickbtn = ['#btn-open-vd1','#btn-open-vd2','#btn-open-vd3'];
+const clickbtn = ['#btn-open-vd1','#btn-open-vd2','#btn-open-vd3', '#btn-open-vd4', '#btn-open-vd4s','#btn-open-vd5', '#btn-open-vd5s'];
 // Threejs
 const models = [
     {
@@ -37,6 +37,50 @@ const models = [
         axis_rotate: 'Y',
         scaleRatio: 0.2,
     },
+    {
+        name: 'VD4',
+        coordinate: new THREE.Object3D(),
+        path: './static/js/threejs/model/sliding01.stl',
+        angle: {x:0, y: 0, z:0},  
+        // rotation angle y: MATH.PI/2 = initial point
+        position: {x: 0,y:0,z:0,},
+        colors: { color: 'green', specular: 0x111111, shininess: 10 },
+        axis_rotate: 'Y',
+        scaleRatio: 0.2,
+    },
+    {
+        name: 'VD4s',
+        coordinate: new THREE.Object3D(),
+        path: './static/js/threejs/model/sliding01s.stl',
+        angle: {x:0, y: 0, z:0},  
+        // rotation angle y: MATH.PI/2 = initial point
+        position: {x: 0,y:0,z:0,},
+        colors: { color: 'green', specular: 0x111111, shininess: 0 },
+        axis_rotate: 'Y',
+        scaleRatio: 0.2,
+    },
+    {
+        name: 'VD5',
+        coordinate: new THREE.Object3D(),
+        path: './static/js/threejs/model/VD5.stl',
+        angle: {x:0, y: 0, z:0},  
+        // rotation angle y: MATH.PI/2 = initial point
+        position: {x: 0,y:0,z:0,},
+        colors: { color: 'green', specular: 0x111111, shininess: 10 },
+        axis_rotate: 'Y',
+        scaleRatio: 0.15,
+    },
+    {
+        name: 'VD5s',
+        coordinate: new THREE.Object3D(),
+        path: './static/js/threejs/model/VD5s.stl',
+        angle: {x:0, y: 0, z:0},  
+        // rotation angle y: MATH.PI/2 = initial point
+        position: {x: 0,y:0,z:0,},
+        colors: { color: 'green', specular: 0x111111, shininess: 0 },
+        axis_rotate: 'Y',
+        scaleRatio: 0.15,
+    },
 ];
 
 const stlLoader = new STLLoader();
@@ -70,10 +114,12 @@ $(document).ready(()=>{
             loadModels(models3D,index);
         });
     });
+
+    var camera = models3D.camera1;
     
     function render() {
         setTimeout(()=>{
-            models3D.drawing(canvas);
+            models3D.drawing(canvas, camera);
             requestAnimationFrame(render);
         }, 1000/100)
     };

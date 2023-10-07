@@ -29,7 +29,7 @@ export default class Arm3D{
 
         // color = 0xFFFFFF; dintensity = 0.8;
         const dlight = new THREE.DirectionalLight(0xFFFFFF, 0.8);
-        dlight.position.set(0, 100, 0);
+        dlight.position.set(50, 50, 50);
         dlight.target.position.set(0, 0, 0);
         
         this.scene.add(dlight);

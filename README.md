@@ -5,7 +5,12 @@ This is the web page for drawing course
 author: lqviet
 email: vietlq@hufi.edu.vn
 start-date : 2023-10-01
-current-version : 1.231001
+current-version : 1.231010
+
+# new update
+- version : 1.231010
+- Date : 2023-10-10
+- Update sliding model VD4, 5, 4s, 5s
 
 # new update
 - version : 1.231001
