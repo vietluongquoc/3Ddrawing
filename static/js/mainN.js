@@ -62,7 +62,7 @@ const models = [
     {
         name: 'VD5',
         coordinate: new THREE.Object3D(),
-        path: './static/js/threejs/model/VD5.stl',
+        path: './static/js/threejs/model/vd5.stl',
         angle: {x:0, y: 0, z:0},  
         // rotation angle y: MATH.PI/2 = initial point
         position: {x: 0,y:0,z:0,},
@@ -73,7 +73,7 @@ const models = [
     {
         name: 'VD5s',
         coordinate: new THREE.Object3D(),
-        path: './static/js/threejs/model/VD5s.stl',
+        path: './static/js/threejs/model/vd5s.stl',
         angle: {x:0, y: 0, z:0},  
         // rotation angle y: MATH.PI/2 = initial point
         position: {x: 0,y:0,z:0,},
