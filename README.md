@@ -10,7 +10,7 @@ current-version : 1.231113
 # new update
 - version : 1.231113
 - Date : 2023-11-13
-- Update sliding model HC6, HC6s
+- Update sliding model HC06, HC06s, HC07
 
 # new update
 - version : 1.231010
