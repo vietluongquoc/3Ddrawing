@@ -6,54 +6,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href='./static/img/letter-l-svgrepo-com.svg' type="image/icon type">
     <link rel="stylesheet" type="text/css" href="./static/css/style.css">
-    <script src="./static/js/jquery.js"></script>
+    <link rel="stylesheet" type="text/css" href="./static/vendor/bootstrap/bootstrap.min.css">
+    <script src="./static/vendor/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="./static/vendor/jquery/jquery.js"></script>
     <title>3D models</title>
 </head>
 <body>
-    <header >
-        <h1>Infor:</h1>
-        <p>This is the landing page to show the 3D model in drawing course</p>
-        <p>Author: lqviet</p>
-        <p>version : 1.231113</p>
-        <p>New update! Creating the project</p>
+    <header>
+        <div class="container">
+          <div class="row">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+              <div class="container-fluid">
+                <a class="navbar-brand" href="#home"><img src="./static/img/letter-l-svgrepo-com.svg" class="img-thumbnail w-50"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <input type="button" value ="VD1" class="btn btn-outline-primary" id="btn-open-vd1">
+                    <input type="button" value ="VD2" class="btn btn-outline-primary" id="btn-open-vd2">
+                    <input type="button" value ="VD3" class="btn btn-outline-primary" id="btn-open-vd3">
+                    <input type="button" value ="VD4" class="btn btn-outline-primary" id="btn-open-vd4">
+                    <input type="button" value ="VD4_SLIDE" class="btn btn-outline-primary" id="btn-open-vd4s">
+                    <input type="button" value ="VD5" class="btn btn-outline-primary" id="btn-open-vd5">
+                    <input type="button" value ="VD5_SLIDE" class="btn btn-outline-primary" id="btn-open-vd5s">
+                    <input type="button" value ="HC6" class="btn btn-outline-primary" id="btn-open-hc6">
+                    <input type="button" value ="HC6_SLIDE" class="btn btn-outline-primary" id="btn-open-hc6s">
+                    <input type="button" value ="HC7" class="btn btn-outline-primary" id="btn-open-hc7">
+                  </ul>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
     </header>
+
     <main>
-        <div class="main-container">
-            <div class="canvas-container">
-                <canvas id="in3dspace">The brower doesn't support</canvas>
-            </div>
-            <div class="btn-show-container">
-                <div>
-                    <input type="button" value ="VD1" class="btn-vd" id="btn-open-vd1">
-                </div>
-                <div>
-                    <input type="button" value ="VD2" class="btn-vd" id="btn-open-vd2">
-                </div>
-                <div>
-                    <input type="button" value ="VD3" class="btn-vd" id="btn-open-vd3">
-                </div>
-                <div>
-                    <input type="button" value ="VD4" class="btn-vd" id="btn-open-vd4">
-                </div>
-                <div>
-                    <input type="button" value ="VD4_SLIDE" class="btn-vd" id="btn-open-vd4s">
-                </div>
-                <div>
-                    <input type="button" value ="VD5" class="btn-vd" id="btn-open-vd5">
-                </div>
-                <div>
-                    <input type="button" value ="VD5_SLIDE" class="btn-vd" id="btn-open-vd5s">
-                </div>
-                <div>
-                    <input type="button" value ="HC6" class="btn-vd" id="btn-open-hc6">
-                </div>
-                <div>
-                    <input type="button" value ="HC6_SLIDE" class="btn-vd" id="btn-open-hc6s">
-                </div>
-                <div>
-                    <input type="button" value ="HC7" class="btn-vd" id="btn-open-hc7">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="canvas-container">
+                        <canvas id="in3dspace">The brower doesn't support</canvas>
+                    </div>
                 </div>
             </div>
+            
+            
         </div>
     </main>
     <script type="module" src="./static/js/mainN.js"></script>

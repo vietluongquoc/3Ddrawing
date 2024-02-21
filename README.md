@@ -1,11 +1,17 @@
 # 3Ddrawing
-This is the web page for drawing course
+This is the web page for Drawing course
 
 ## Infor
 author: lqviet
-email: vietlq@hufi.edu.vn
+email: vietlq@huit.edu.vn
 start-date : 2023-10-01
-current-version : 1.231113
+current-version : 1.240221
+
+# new update
+- version : 1.240221
+- Date : 2024-02-21
+- Change the camera
+- Change the 3D model
 
 # new update
 - version : 1.231113

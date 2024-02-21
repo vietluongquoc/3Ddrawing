@@ -1,9 +1,4 @@
 /* General btn */
-header{
-    margin: 10px;
-    text-align: center;
-    display: none;
-}
 h1{
     font-size: large;
 }
@@ -13,34 +8,6 @@ h6{
 /* div{
     border: black solid 1px;
 } */
-.button-container{
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin:0px 1px 0px 1px;
-}
-button{
-    width: 80px;
-    height: 30px;
-    background-color: #4CAF50; /* Green */
-    border: none;
-    color: rgb(66, 1, 1);
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 13px;
-    line-height:25px;
-    opacity: 0.5;
-    margin:0px 1px 0px 1px;
-}
-
-button:hover {
-    background-color: #025505;
-    color: rgb(252, 156, 156);
-    opacity: 1;
-}
-
 
 main{
     /* display: grid;
