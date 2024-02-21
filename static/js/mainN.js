@@ -138,8 +138,8 @@ var loadModels = (models3D, i) =>{
 
 
 $(document).ready(()=>{
-    var canvas = document.getElementById('in3dspace');
-    var models3D = new Arm3D(canvas);
+    var canvas0 = document.getElementById('in3dspace0');
+    var models3D = new Arm3D(canvas0);
     models3D.init();
     loadModels(models3D,0);
     clickbtn.forEach((clickbtn, index)=>{
@@ -148,11 +148,9 @@ $(document).ready(()=>{
         });
     });
 
-    var camera = models3D.camera1;
-    
     function render() {
         setTimeout(()=>{
-            models3D.drawing(canvas, camera);
+            models3D.drawing(canvas0);
             requestAnimationFrame(render);
         }, 1000/100)
     };

@@ -12,6 +12,7 @@ current-version : 1.240221
 - Date : 2024-02-21
 - Change the camera
 - Change the 3D model
+- Change the decription
 
 # new update
 - version : 1.231113
