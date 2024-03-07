@@ -22,7 +22,7 @@ const models = [
         angle: {x:0, y: 0, z:0},   
         // rotation angle y: -MATH.PI/2 = initial point
         position: {x: 0,y:0,z:0,},
-        colors: { color: 'green', specular: 0x111111, shininess: 10 },
+        colors: { color: '#4CAF50', specular: 0x111111, shininess: 10 },
         axis_rotate: 'Y',
         scaleRatio:  0.3,
     },
