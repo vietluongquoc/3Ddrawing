@@ -9,14 +9,16 @@ export default class Model3d{
         // size of grid = 10; divisions = 20;
         // Light
         //skyColor = 0x000000;groundColor = 0xffffff; hintensity = 1;
-        this.hlight = new THREE.HemisphereLight(0x000000, 0xffffff, 1);
-        this.scene.add(this.hlight);
+        // this.hlight = new THREE.HemisphereLight(0x000000, 0xffffff, 1);
+        // this.scene.add(this.hlight);
         // color = 0xFFFFFF; dintensity = 0.8;
-        this.dlight = new THREE.DirectionalLight(0xFFFFFF, 0.8);
-        this.dlight.position.set(50, 50, 50);
-        this.dlight.target.position.set(0, 0, 0);
-        this.scene.add(this.dlight);
-        this.scene.add(this.dlight.target);
+        // this.dlight = new THREE.DirectionalLight(0xFFFFFF, 0.8);
+        // this.dlight.position.set(50, 50, 50);
+        // this.dlight.target.position.set(0, 0, 0);
+        // this.scene.add(this.dlight);
+        // this.scene.add(this.dlight.target);
+        this.hlight = new THREE.AmbientLight(0x000000, 0xffffff, 1);
+        this.scene.add(this.hlight);
         this.scene.background = new THREE.Color('white');
         this.renderer.outputEncoding = THREE.sRGBEncoding;
     }
